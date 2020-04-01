@@ -161,6 +161,7 @@ var FloatingLabel = createReactClass({
       <View style={elementStyles}>
         {this._renderLabel()}
         <TextInput
+          ref={ref => this.props.refs(ref)}
           {...props}
         >
         </TextInput>
